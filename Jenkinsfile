@@ -7,9 +7,9 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('email') {
       steps {
-        emailext(body: 'prueba', subject: 'prueba', to: 'cristian_vasquez82512@elpoli.edu.co')
+        emailext(body: 'prueba', subject: 'prueba', to: 'cristian_vasquez82152@elpoli.edu.co')
         echo 'send email'
       }
     }
