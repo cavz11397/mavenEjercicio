@@ -9,7 +9,7 @@ pipeline {
 
     stage('email') {
       steps {
-        emailext(body: 'prueba', subject: 'prueba', to: 'cristian_vasquez82152@elpoli.edu.co')
+        emailext(body: 'prueba', subject: 'prueba', to: 'cristian_vasquez82152@elpoli.edu.co', saveOutput: true)
         echo 'send email'
       }
     }
